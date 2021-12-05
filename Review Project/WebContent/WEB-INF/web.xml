@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Review Project</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+  <servlet>
+  <servlet-name>UserServlet</servlet-name>
+  <servlet-class>com.servlets.UserServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/userLogin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>UserRegistrationServlet</servlet-name>
+  	<servlet-class>com.servlets.UserRegistrationServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>UserRegistrationServlet</servlet-name>
+  	<url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>UserPost</servlet-name>
+  	<servlet-class>com.servlets.UserPost</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>UserPost</servlet-name>
+  	<url-pattern>/newPost</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>UserComment</servlet-name>
+  	<servlet-class>com.servlets.UserComment</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>UserComment</servlet-name>
+  	<url-pattern>/commentServlet</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
